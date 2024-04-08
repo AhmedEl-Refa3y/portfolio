@@ -87,7 +87,7 @@ const Portfolio = () => {
         </Zoom>
         <div className="work__container grid">
           {items.map((ele, index) => {
-            const { id, image, title, category, images } = ele;
+            const { id, image, title, category, linkCode } = ele;
             return (
               <Zoom key={id}>
                 <div className="work__card">
@@ -101,7 +101,7 @@ const Portfolio = () => {
                   </div>
                   <span className="work__category">{category}</span>
                   <h3 className="work__title">{title}</h3>
-                  <a href="#" className="work__button">
+                  <a href={linkCode} target="_blank" className="work__button">
                     <i className="icon-link work__button-icon"></i>
                   </a>
                 </div>

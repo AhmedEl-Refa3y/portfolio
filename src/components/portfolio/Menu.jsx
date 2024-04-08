@@ -9,6 +9,7 @@ const Menu = [
     image: wepStore1,
     title: "Wep Store",
     category: ["React JS"],
+    linkCode: "https://github.com/AhmedEl-Refa3y/web-store",
   },
   {
     id: 2,
