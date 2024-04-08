@@ -128,7 +128,6 @@ const Portfolio = () => {
               <i className="icon-close"></i>
             </button>
             <button className="lightbox__control" onClick={goToNextImage}>
-              {" "}
               <FontAwesomeIcon icon={faChevronRight} />
             </button>
           </div>

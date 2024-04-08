@@ -27,9 +27,9 @@
   color: #fff;
 }
 
-.services__description {
+/* .services__description {
   color: #f8f9fa;
-}
+} */
 
 .services__card:nth-child(2) .services__title {
   color: var(--title-color);

@@ -30,7 +30,7 @@
 }
 
 .home__social-link {
-  color: var(--title-color);
+  color: var(--text-color);
   font-size: 1.3rem;
   transition: 0.3s;
 }

@@ -58,6 +58,7 @@
 
 .timeline__date {
   color: #8b88b1;
+  color: var(--text-color);
   font-size: var(--small-font-size);
 }
 
