@@ -9,6 +9,7 @@ const BallLoader = () => {
       <div className="ball top"></div>
       <div className="ball middle"></div>
       <div className="ball bottom"></div>
+      <div className="ball extra"></div>
     </div>
   );
 };

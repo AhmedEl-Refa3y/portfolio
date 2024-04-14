@@ -1,46 +1,42 @@
-/* BallLoader.css */
-
 .ball-loader {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .ball {
-  margin: 30px;
-  position: relative;
-  right: -35%;
-  width: 50px;
-  height: 50px;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  background-color: hsl(353, 100%, 65%);
   background: linear-gradient(45deg, hsl(353, 100%, 65%), hsl(43, 100%, 68%));
   animation: bounce 0.7s infinite alternate;
 }
+
 @media screen and (max-width: 1024px) {
   .ball {
     width: 30px;
     height: 30px;
-    right: -20%;
   }
 }
 
-.top {
-  animation-delay: -0.35s;
-  transform-origin: bottom;
-}
-
-.middle {
-  animation-delay: -0.175s; /* تأخير الكرة الوسطى */
-}
-
-.bottom {
-  transform-origin: top;
+.top,
+.middle,
+.bottom,
+.extra {
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes bounce {
-  from {
-    transform: translateY(0);
+  0% {
+    transform: translateY(0) scale(1);
   }
-  to {
-    transform: translateY(300px);
+  50% {
+    transform: translateY(-20px) scale(1.2);
+  }
+  100% {
+    transform: translateY(0) scale(1);
   }
 }
