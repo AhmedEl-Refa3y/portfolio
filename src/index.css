@@ -123,6 +123,8 @@ img {
   font-weight: var(--font-bold);
   position: relative;
   margin-bottom: 3.75rem;
+  border-bottom: 1px solid gray;
+  width: fit-content;
 }
 
 .section__title::before {

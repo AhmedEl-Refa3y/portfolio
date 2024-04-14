@@ -11,18 +11,6 @@ const Menu = [
     category: ["React JS"],
     linkCode: "https://github.com/AhmedEl-Refa3y/web-store",
   },
-  {
-    id: 2,
-    image: Work2,
-    title: "Guest App Walkthrough Screens",
-    category: ["React JS"],
-  },
-  {
-    id: 3,
-    image: Work3,
-    title: "Delivery App Wireframe",
-    category: ["React JS"],
-  },
 ];
 
 export default Menu;

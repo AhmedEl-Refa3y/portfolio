@@ -25,7 +25,7 @@ const Application = () => {
   return (
     <section className="skills container" id="skills">
       <Zoom>
-        <h2 className="skills__title">Skills</h2>
+        <h2 className="skills__title section__title">Skills</h2>
       </Zoom>
 
       <div className="wrapper">
@@ -33,23 +33,23 @@ const Application = () => {
           &#10094;
         </a>
         <div className="image-container">
-          <Zoom>
+          <Zoom delay={500}>
             <img src={htmlLogo} alt="HTML Logo" className="image" />
           </Zoom>
-          <Zoom>
+          <Zoom delay={700}>
             <img src={cssLogo} alt="CSS Logo" className="image" />
           </Zoom>
-          <Zoom>
+          <Zoom delay={900}>
             <img src={javascriptLogo} alt="JavaScript Logo" className="image" />
           </Zoom>
-          <Zoom>
+          <Zoom delay={1100}>
             <img src={bootstrapLogo} alt="Bootstrap Logo" className="image" />
           </Zoom>
-          <Zoom>
-            <img src={reactLogo} alt="React Logo" className="image" />
-          </Zoom>
-          <Zoom>
+          <Zoom delay={1300}>
             <img src={sassLogo} alt="sass Logo" className="image" />
+          </Zoom>
+          <Zoom delay={1500}>
+            <img src={reactLogo} alt="React Logo" className="image" />
           </Zoom>
         </div>
         <a className="next" onClick={() => scroll(1)}>
