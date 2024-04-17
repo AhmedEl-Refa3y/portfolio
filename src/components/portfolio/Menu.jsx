@@ -1,7 +1,5 @@
 import wepStore1 from "../assets/assets/1-wep_store.png";
-import wepStore2 from "../assets/assets/2-wep_store.png";
-import Work2 from "../assets/assets/work-2.svg";
-import Work3 from "../assets/assets/work-3.svg";
+import adminDashboard from "../assets/assets/admin-dashboard.png";
 
 const Menu = [
   {
@@ -10,6 +8,13 @@ const Menu = [
     title: "Wep Store",
     category: ["React JS"],
     linkCode: "https://github.com/AhmedEl-Refa3y/web-store",
+  },
+  {
+    id: 2,
+    image: adminDashboard,
+    title: "Admin Dashboard",
+    category: ["React JS"],
+    linkCode: "https://github.com/AhmedEl-Refa3y/Admin-Dashboard",
   },
 ];
 

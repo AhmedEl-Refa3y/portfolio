@@ -149,6 +149,26 @@ img.work__img {
   object-fit: contain;
 }
 
+.work__button__lightbox {
+  position: relative;
+  bottom: -100px;
+  left: -40px;
+  color: #fff;
+  font-size: 15px;
+  display: block;
+  background-color: transparent;
+  border: 2px solid;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+}
+.work__button__lightbox:hover {
+  color: #ccc;
+}
+
 .lightbox__control {
   font-size: 35px;
   background-color: transparent;

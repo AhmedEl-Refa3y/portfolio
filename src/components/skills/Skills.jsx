@@ -45,10 +45,10 @@ const Application = () => {
           <Zoom delay={1100}>
             <img src={bootstrapLogo} alt="Bootstrap Logo" className="image" />
           </Zoom>
-          <Zoom delay={1300}>
+          <Zoom delay={500}>
             <img src={sassLogo} alt="sass Logo" className="image" />
           </Zoom>
-          <Zoom delay={1500}>
+          <Zoom delay={700}>
             <img src={reactLogo} alt="React Logo" className="image" />
           </Zoom>
         </div>

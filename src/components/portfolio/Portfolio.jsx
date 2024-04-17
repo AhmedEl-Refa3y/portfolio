@@ -130,6 +130,13 @@ const Portfolio = () => {
             <button className="lightbox__control" onClick={goToNextImage}>
               <FontAwesomeIcon icon={faChevronRight} />
             </button>
+            {/* <a
+              href={items[lightboxIndex].linkCode}
+              target="_blank"
+              className="work__button__lightbox"
+            >
+              <i className="icon-link work__button-icon"></i>
+            </a> */}
           </div>
         )}
       </section>
