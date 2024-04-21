@@ -1,9 +1,9 @@
 .skills {
-  height: 150px;
+  /* height: 150px; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   padding-top: 50px;
 }
 
@@ -36,14 +36,9 @@
   width: 100px;
   font-size: 25px;
   /* background: blue; */
-  margin: 50px;
   display: inline-block;
   line-height: 100px;
   transition: 0.5s;
-}
-
-.image:hover {
-  scale: 1.5;
 }
 
 .image-container {
@@ -52,7 +47,23 @@
   white-space: nowrap;
   overflow-x: hidden;
   overflow-y: hidden;
-  width: 80%;
+  /* width: 80%;  */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(204 190 190 / 50%);
+  transition: 0.5s;
+}
+
+.logo:hover {
+  scale: 1.2;
 }
 
 .prev,

@@ -12,7 +12,7 @@ const About = () => {
         <h2 className="section__title">About Me</h2>
       </Zoom>
       <div className="about__container grid">
-        <Zoom>
+        <Zoom delay={500}>
           <img
             src={me}
             alt=""
@@ -21,7 +21,7 @@ const About = () => {
           />
         </Zoom>
 
-        <Zoom>
+        <Zoom delay={700}>
           <div className="about__data grid">
             <div className="about__info">
               <p

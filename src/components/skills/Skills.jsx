@@ -9,19 +9,6 @@ import sassLogo from "../assets/assets/sass-icon.svg";
 import Zoom from "react-reveal/Zoom";
 
 const Application = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  const scroll = (direction) => {
-    const container = document.querySelector(".image-container");
-    const scrollAmount = (container.clientWidth / 2) * direction;
-    const newPos = container.scrollLeft + scrollAmount;
-    container.scrollTo({
-      left: newPos,
-      behavior: "smooth",
-    });
-    setScrollPosition(newPos);
-  };
-
   return (
     <section className="skills container" id="skills">
       <Zoom>
@@ -29,32 +16,48 @@ const Application = () => {
       </Zoom>
 
       <div className="wrapper">
-        <a className="prev" onClick={() => scroll(-1)}>
-          &#10094;
-        </a>
         <div className="image-container">
-          <Zoom>
-            <img src={htmlLogo} alt="HTML Logo" className="image" />
+          <Zoom delay={500}>
+            <div className="logo">
+              <img src={htmlLogo} alt="HTML Logo" className="image" />
+              HTML
+            </div>
           </Zoom>
-          <Zoom>
-            <img src={cssLogo} alt="CSS Logo" className="image" />
+          <Zoom delay={700}>
+            <div className="logo">
+              <img src={cssLogo} alt="CSS Logo" className="image" />
+              CSS
+            </div>
           </Zoom>
-          <Zoom>
-            <img src={javascriptLogo} alt="JavaScript Logo" className="image" />
+          <Zoom delay={900}>
+            <div className="logo">
+              <img
+                src={javascriptLogo}
+                alt="JavaScript Logo"
+                className="image"
+              />
+              JS
+            </div>
           </Zoom>
-          <Zoom>
-            <img src={bootstrapLogo} alt="Bootstrap Logo" className="image" />
+          <Zoom delay={1100}>
+            <div className="logo">
+              <img src={bootstrapLogo} alt="Bootstrap Logo" className="image" />
+              Bootstrap
+            </div>
           </Zoom>
-          <Zoom>
-            <img src={sassLogo} alt="sass Logo" className="image" />
+          <Zoom delay={1300}>
+            <div className="logo">
+              <img src={sassLogo} alt="sass Logo" className="image" />
+              Sass
+            </div>
           </Zoom>
-          <Zoom>
-            <img src={reactLogo} alt="React Logo" className="image" />
+          <Zoom delay={1500}>
+            <div className="logo">
+              <img src={reactLogo} alt="React Logo" className="image" />
+              React JS
+            </div>
           </Zoom>
         </div>
-        <a className="next" onClick={() => scroll(1)}>
-          &#10095;
-        </a>
       </div>
     </section>
   );
