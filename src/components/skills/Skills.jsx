@@ -33,22 +33,22 @@ const Application = () => {
           &#10094;
         </a>
         <div className="image-container">
-          <Zoom delay={500}>
+          <Zoom>
             <img src={htmlLogo} alt="HTML Logo" className="image" />
           </Zoom>
-          <Zoom delay={700}>
+          <Zoom>
             <img src={cssLogo} alt="CSS Logo" className="image" />
           </Zoom>
-          <Zoom delay={900}>
+          <Zoom>
             <img src={javascriptLogo} alt="JavaScript Logo" className="image" />
           </Zoom>
-          <Zoom delay={1100}>
+          <Zoom>
             <img src={bootstrapLogo} alt="Bootstrap Logo" className="image" />
           </Zoom>
-          <Zoom delay={500}>
+          <Zoom>
             <img src={sassLogo} alt="sass Logo" className="image" />
           </Zoom>
-          <Zoom delay={700}>
+          <Zoom>
             <img src={reactLogo} alt="React Logo" className="image" />
           </Zoom>
         </div>

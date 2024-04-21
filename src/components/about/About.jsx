@@ -8,11 +8,11 @@ import Zoom from "react-reveal/Zoom";
 const About = () => {
   return (
     <section className="about container section" id="about">
-      <Zoom delay={500}>
+      <Zoom>
         <h2 className="section__title">About Me</h2>
       </Zoom>
       <div className="about__container grid">
-        <Zoom delay={500}>
+        <Zoom>
           <img
             src={me}
             alt=""
@@ -21,7 +21,7 @@ const About = () => {
           />
         </Zoom>
 
-        <Zoom delay={1000}>
+        <Zoom>
           <div className="about__data grid">
             <div className="about__info">
               <p

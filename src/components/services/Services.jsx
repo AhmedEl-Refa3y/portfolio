@@ -2,7 +2,6 @@ import React from "react";
 import "./Services.css";
 import Image1 from "../assets/assets/service-1.svg";
 import Image2 from "../assets/assets/service-2.svg";
-import Image3 from "../assets/assets/service-3.svg";
 import Zoom from "react-reveal/Zoom";
 
 const data = [
