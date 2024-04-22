@@ -1,27 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import ScrollTop from "./ScrollTop";
 import Zoom from "react-reveal/Zoom";
-import Roll from "react-reveal/Roll";
 
 const Contact = () => {
-  const handleSendMessage = () => {
-    const recipient = "recipient@example.com"; // Change this to your recipient email address
-    const subject = "Subject of the email";
-    const body = "Body of the email";
+  const [message, setMessage] = useState(""); // State لتخزين الرسالة المكتوبة في الحقل textarea
+  const [subject, setSubject] = useState(""); // State لتخزين موضوع البريد الإلكتروني
 
+  const handleSendMessage = () => {
+    const recipient = "zekoahmed812@gmail.com"; // تغيير هذا إلى عنوان البريد الإلكتروني المستلم
     const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(
       subject
-    )}&body=${encodeURIComponent(body)}`;
+    )}&body=${encodeURIComponent(message)}`;
 
     window.location.href = mailtoLink;
   };
 
   return (
     <section className="contact container section" id="contact">
-      <Roll>
+      <Zoom>
         <h2 className="section__title">Get In Touch</h2>
-      </Roll>
+      </Zoom>
 
       <div className="contact__container grid">
         <Zoom>
@@ -61,6 +60,8 @@ const Contact = () => {
                   type="text"
                   className="contact__form-input"
                   placeholder="Your Subject"
+                  value={subject} // ربط قيمة الحقل input بالمتغير subject
+                  onChange={(e) => setSubject(e.target.value)} // تحديث قيمة المتغير subject عندما يتم كتابة البيانات
                 />
               </div>
             </Zoom>
@@ -74,6 +75,8 @@ const Contact = () => {
                   rows="10"
                   className="contact__form-input"
                   placeholder="Your Message"
+                  value={message} // ربط قيمة الحقل textarea بالمتغير message
+                  onChange={(e) => setMessage(e.target.value)} // تحديث قيمة المتغير message عندما يتم كتابة البيانات
                 ></textarea>
               </div>
             </Zoom>
