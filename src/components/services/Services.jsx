@@ -3,6 +3,7 @@ import "./Services.css";
 import Image1 from "../assets/assets/service-1.svg";
 import Image2 from "../assets/assets/service-2.svg";
 import Zoom from "react-reveal/Zoom";
+import Roll from "react-reveal/Roll";
 
 const data = [
   {
@@ -23,9 +24,9 @@ const data = [
 const Services = () => {
   return (
     <section className="services container section" id="services">
-      <Zoom>
+      <Roll>
         <h2 className="section__title">Services</h2>
-      </Zoom>
+      </Roll>
 
       <div className="services__container grid">
         <Zoom>

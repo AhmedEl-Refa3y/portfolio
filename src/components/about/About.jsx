@@ -4,13 +4,14 @@ import "./About.css";
 import me from "../assets/me.jpg";
 // import AboutBox from './AboutBox';
 import Zoom from "react-reveal/Zoom";
+import Roll from "react-reveal/Roll";
 
 const About = () => {
   return (
     <section className="about container section" id="about">
-      <Zoom>
+      <Roll>
         <h2 className="section__title">About Me</h2>
-      </Zoom>
+      </Roll>
       <div className="about__container grid">
         <Zoom delay={500}>
           <img

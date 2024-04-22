@@ -7,13 +7,14 @@ import bootstrapLogo from "../assets/assets/bootstrap-logo.svg";
 import reactLogo from "../assets/assets/react-icon.svg";
 import sassLogo from "../assets/assets/sass-icon.svg";
 import Zoom from "react-reveal/Zoom";
+import Roll from "react-reveal/Roll";
 
 const Application = () => {
   return (
     <section className="skills container" id="skills">
-      <Zoom>
+      <Roll>
         <h2 className="skills__title section__title">Skills</h2>
-      </Zoom>
+      </Roll>
 
       <div className="wrapper">
         <div className="image-container">

@@ -3,13 +3,14 @@ import "./Resume.css";
 import Data from "./Data";
 import Card from "./Card";
 import Zoom from "react-reveal/Zoom";
+import Roll from "react-reveal/Roll";
 
 const Resume = () => {
   return (
     <section className="resume container section" id="resume">
-      <Zoom>
+      <Roll>
         <h2 className="section__title">Experience</h2>
-      </Zoom>
+      </Roll>
       <div className="resume__container grid">
         {/* <div className="education">
           <Zoom>

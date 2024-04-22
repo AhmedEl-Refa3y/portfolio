@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact.css";
 import ScrollTop from "./ScrollTop";
 import Zoom from "react-reveal/Zoom";
+import Roll from "react-reveal/Roll";
 
 const Contact = () => {
   const handleSendMessage = () => {
@@ -18,9 +19,9 @@ const Contact = () => {
 
   return (
     <section className="contact container section" id="contact">
-      <Zoom>
+      <Roll>
         <h2 className="section__title">Get In Touch</h2>
-      </Zoom>
+      </Roll>
 
       <div className="contact__container grid">
         <Zoom>

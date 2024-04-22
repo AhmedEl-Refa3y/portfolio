@@ -7,6 +7,7 @@ import {
   faChevronRight,
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
+import Roll from "react-reveal/Roll";
 
 const Portfolio = () => {
   const [items, setItems] = useState(Menu);
@@ -82,9 +83,9 @@ const Portfolio = () => {
   return (
     <>
       <section className="work container section" id="work">
-        <Zoom>
-          <h2 className="section__title">Recent Work</h2>
-        </Zoom>
+        <Roll>
+          <h2 className="section__title">Projects</h2>
+        </Roll>
         <div className="work__container grid">
           {items.map((ele, index) => {
             const { id, image, title, category, linkCode } = ele;

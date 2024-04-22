@@ -48,11 +48,15 @@
   resize: none;
 }
 
-.scroll__top {
-  position: absolute;
-  bottom: 2.5rem;
-  left: 0;
-  width: 100%;
+.scroll_top {
+  position: relative;
+  bottom: -30px;
+  transform: rotate(180deg);
+  left: 800px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 30px;
+  max-width: fit-content;
 }
 
 .go-top {
@@ -76,6 +80,11 @@
   .contact__form-group {
     grid-template-columns: 1fr;
   }
+
+  .scroll_top {
+    left: 650px;
+    bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -87,10 +96,20 @@
   .contact__info {
     text-align: center;
   }
+
+  .scroll_top {
+    left: 300px;
+    bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 350px) {
   .contact__container {
     grid-template-columns: 1fr;
+  }
+
+  .scroll_top {
+    left: 250px;
+    bottom: 30px;
   }
 }
