@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import "./Contact.css";
 import ScrollTop from "./ScrollTop";
 import Zoom from "react-reveal/Zoom";
+import Roll from "react-reveal/Roll";
 
 const Contact = () => {
   const [message, setMessage] = useState("");
   const [subject, setSubject] = useState("");
 
-  const handleSendMessage = () => {
+  const handleSendMessage = (event) => {
+    event.preventDefault();
+
     if (!message || !subject) {
       alert("Please fill in all Subject and Message fields.");
       return;
@@ -23,9 +26,9 @@ const Contact = () => {
 
   return (
     <section className="contact container section" id="contact">
-      <Zoom>
+      <Roll>
         <h2 className="section__title">Get In Touch</h2>
-      </Zoom>
+      </Roll>
 
       <div className="contact__container grid">
         <Zoom>
@@ -37,7 +40,7 @@ const Contact = () => {
           </div>
         </Zoom>
 
-        <form action="" className="contact__form">
+        <form onSubmit={handleSendMessage} className="contact__form">
           <div className="contact__form-group">
             <Zoom>
               <div className="contact__form-div">
@@ -92,11 +95,7 @@ const Contact = () => {
           <div className="contact__form-group">
             <Zoom>
               <div className="contact__form-div">
-                <button
-                  type="button" // تغيير النوع من submit إلى button
-                  className="btn"
-                  onClick={handleSendMessage}
-                >
+                <button type="submit" className="btn">
                   Send Message
                 </button>
               </div>
