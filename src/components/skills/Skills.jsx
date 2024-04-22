@@ -6,6 +6,7 @@ import javascriptLogo from "../assets/assets/javascript-logo.svg";
 import bootstrapLogo from "../assets/assets/bootstrap-logo.svg";
 import reactLogo from "../assets/assets/react-icon.svg";
 import sassLogo from "../assets/assets/sass-icon.svg";
+import reduxLogo from "../assets/assets/redux-icon.svg";
 import Zoom from "react-reveal/Zoom";
 import Roll from "react-reveal/Roll";
 
@@ -56,6 +57,12 @@ const Application = () => {
             <div className="logo">
               <img src={reactLogo} alt="React Logo" className="image" />
               React JS
+            </div>
+          </Zoom>
+          <Zoom delay={1700}>
+            <div className="logo">
+              <img src={reduxLogo} alt="Redux Logo" className="image" />
+              Redux
             </div>
           </Zoom>
         </div>
