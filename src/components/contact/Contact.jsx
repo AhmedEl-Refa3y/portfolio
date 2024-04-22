@@ -9,7 +9,7 @@ const Contact = () => {
 
   const handleSendMessage = () => {
     if (!message || !subject) {
-      alert("Please fill in all required fields.");
+      alert("Please fill in all Subject and Message fields.");
       return;
     }
 
