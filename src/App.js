@@ -12,6 +12,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Skills from "./components/skills/Skills";
 import BallLoader from "./components/bouncing/BallLoader";
+import Bubble from "./components/bubble/Bubble";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -19,7 +20,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -30,6 +31,7 @@ function App() {
         <BallLoader />
       ) : (
         <>
+          <Bubble />
           <Sidebar />
           <main className="main">
             <Home />

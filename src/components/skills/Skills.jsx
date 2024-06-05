@@ -21,13 +21,23 @@ const Application = () => {
         <div className="image-container">
           <Zoom delay={500}>
             <div className="logo">
-              <img src={htmlLogo} alt="HTML Logo" className="image" />
+              <img
+                src={htmlLogo}
+                alt="HTML Logo"
+                className="image"
+                loading="lazy"
+              />
               HTML
             </div>
           </Zoom>
           <Zoom delay={700}>
             <div className="logo">
-              <img src={cssLogo} alt="CSS Logo" className="image" />
+              <img
+                src={cssLogo}
+                alt="CSS Logo"
+                className="image"
+                loading="lazy"
+              />
               CSS
             </div>
           </Zoom>
@@ -37,31 +47,52 @@ const Application = () => {
                 src={javascriptLogo}
                 alt="JavaScript Logo"
                 className="image"
+                loading="lazy"
               />
               JS
             </div>
           </Zoom>
           <Zoom delay={1100}>
             <div className="logo">
-              <img src={bootstrapLogo} alt="Bootstrap Logo" className="image" />
+              <img
+                src={bootstrapLogo}
+                alt="Bootstrap Logo"
+                className="image"
+                loading="lazy"
+              />
               Bootstrap
             </div>
           </Zoom>
           <Zoom delay={1300}>
             <div className="logo">
-              <img src={sassLogo} alt="sass Logo" className="image" />
+              <img
+                src={sassLogo}
+                alt="sass Logo"
+                className="image"
+                loading="lazy"
+              />
               Sass
             </div>
           </Zoom>
           <Zoom delay={1500}>
             <div className="logo">
-              <img src={reactLogo} alt="React Logo" className="image" />
+              <img
+                src={reactLogo}
+                alt="React Logo"
+                className="image"
+                loading="lazy"
+              />
               React JS
             </div>
           </Zoom>
           <Zoom delay={1700}>
             <div className="logo">
-              <img src={reduxLogo} alt="Redux Logo" className="image" />
+              <img
+                src={reduxLogo}
+                alt="Redux Logo"
+                className="image"
+                loading="lazy"
+              />
               Redux
             </div>
           </Zoom>

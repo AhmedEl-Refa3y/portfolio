@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const AboutBox = () => {
   return (
@@ -35,7 +35,7 @@ const AboutBox = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AboutBox
+export default AboutBox;

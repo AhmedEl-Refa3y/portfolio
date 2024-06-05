@@ -15,6 +15,7 @@ const About = () => {
       <div className="about__container grid">
         <Zoom delay={500}>
           <img
+            loading="lazy"
             src={me}
             alt=""
             className="about__img"

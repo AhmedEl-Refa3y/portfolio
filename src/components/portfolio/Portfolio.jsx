@@ -34,9 +34,10 @@ const Portfolio = () => {
   }, [lightboxImage]);
 
   const filterItem = (categoryItem) => {
-    const updatedItems = Menu.filter((curEle) => {
-      return curEle.category === categoryItem;
-    });
+    const updatedItems =
+      categoryItem === "User"
+        ? Menu
+        : Menu.filter((curEle) => curEle.category === categoryItem);
     setItems(updatedItems);
   };
 
@@ -51,28 +52,16 @@ const Portfolio = () => {
   };
 
   const goToNextImage = () => {
-    const nextIndex = (lightboxIndex + 1) % items.length; // Calculate the index of the next image
+    const nextIndex = (lightboxIndex + 1) % items.length;
     setLightboxIndex(nextIndex);
     const currentItem = items[nextIndex];
     if (currentItem && currentItem.image) {
       setLightboxImage(currentItem.image);
     }
-
-    // lightBox.classList.remove("active");
-
-    // $(".lightbox__image").click(function () {
-    //   addClass("active");
-    // });
-    // const currentItem = items[lightboxIndex];
-    // if (currentItem && currentItem.images) {
-    //   const nextIndex = (lightboxIndex + 1) % currentItem.images.length;
-    //   setLightboxIndex(nextIndex);
-    //   setLightboxImage(currentItem.images[nextIndex]);
-    // }
   };
 
   const goToPreviousImage = () => {
-    const previousIndex = (lightboxIndex - 1 + items.length) % items.length; // Calculate the index of the previous image
+    const previousIndex = (lightboxIndex - 1 + items.length) % items.length;
     setLightboxIndex(previousIndex);
     const currentItem = items[previousIndex];
     if (currentItem && currentItem.image) {
@@ -97,10 +86,21 @@ const Portfolio = () => {
                     key={id}
                     onClick={() => openLightbox(image, index)}
                   >
-                    <img src={image} alt="" className="work__img" />
+                    <img
+                      loading="lazy"
+                      src={image}
+                      alt=""
+                      className="work__img"
+                    />
                     <div className="work__mask"></div>
                   </div>
-                  <span className="work__category">{category}</span>
+                  <div className="work__categories">
+                    {category.map((cat, catIndex) => (
+                      <span key={catIndex} className="work__category">
+                        {cat}
+                      </span>
+                    ))}
+                  </div>{" "}
                   <h3 className="work__title">{title}</h3>
                   <a href={linkCode} target="_blank" className="work__button">
                     <i className="icon-link work__button-icon"></i>
@@ -119,6 +119,7 @@ const Portfolio = () => {
               <FontAwesomeIcon icon={faChevronLeft} />
             </button>
             <img
+              loading="lazy"
               src={lightboxImage}
               alt="Image"
               id="lightBoxImage"
@@ -131,13 +132,6 @@ const Portfolio = () => {
             <button className="lightbox__control" onClick={goToNextImage}>
               <FontAwesomeIcon icon={faChevronRight} />
             </button>
-            {/* <a
-              href={items[lightboxIndex].linkCode}
-              target="_blank"
-              className="work__button__lightbox"
-            >
-              <i className="icon-link work__button-icon"></i>
-            </a> */}
           </div>
         )}
       </section>

@@ -60,6 +60,14 @@
   transition: 0.3s;
 }
 
+.work__category {
+  margin-left: 0px;
+}
+
+.work__category + .work__category {
+  margin-left: 90px;
+}
+
 .work__title {
   color: #fff;
   font-size: var(--h3-font-size);
