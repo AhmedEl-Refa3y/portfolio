@@ -59,7 +59,7 @@ const Resume = () => {
             <div className="timeline grid">
               <div className="timeline__item">
                 <i className="icon-briefcase"></i>
-                <span className="timeline__date">July 2023 - July 2024</span>
+                <span className="timeline__date">July 2023 - June 2024</span>
                 <h3 className="timeline__title">Front-End Developer</h3>
                 <p className="timeline__text">
                   Traning at Code Clouders Company
