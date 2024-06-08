@@ -28,7 +28,8 @@
   transition: 0.3s;
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.nav__link.active {
   color: hsl(43, 100%, 68%);
 }
 
