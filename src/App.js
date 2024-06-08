@@ -6,15 +6,13 @@ import About from "./components/about/About";
 import Services from "./components/services/Services";
 import Resume from "./components/resume/Resume";
 import Portfolio from "./components/portfolio/Portfolio";
-// import Pricing from "./components/pricing/Pricing";
-// import Testimonials from "./components/testimonials/Testimonials";
-// import Blog from "./components/blog/Blog";
 import Contact from "./components/contact/Contact";
 import Skills from "./components/skills/Skills";
 import BallLoader from "./components/bouncing/BallLoader";
 import Bubble from "./components/bubble/Bubble";
 
 function App() {
+  // active sidebar
   let sections = document.querySelectorAll("section");
   let navLinks = document.querySelectorAll(".nav__link");
   window.onscroll = () => {
@@ -33,6 +31,8 @@ function App() {
       }
     });
   };
+
+  // active loading or bouncing
 
   const [loading, setLoading] = useState(true);
 
