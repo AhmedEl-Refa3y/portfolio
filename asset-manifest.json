@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9fccfa92.css",
-    "main.js": "/portfolio/static/js/main.92caa5cc.js",
+    "main.css": "/portfolio/static/css/main.a420d395.css",
+    "main.js": "/portfolio/static/js/main.94a8c298.js",
     "static/media/1-wep_store.png": "/portfolio/static/media/1-wep_store.74a7572e84558d3c72e4.png",
     "static/media/admin-dashboard.png": "/portfolio/static/media/admin-dashboard.9c0ecaca32089c281f66.png",
     "static/media/me.jpg": "/portfolio/static/media/me.d0a2989b78f2c524d9e3.jpg",
@@ -15,11 +15,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/javascript-logo.svg": "/portfolio/static/media/javascript-logo.34cd9860149518f3e4ecc21a4b50efae.svg",
     "static/media/html-logo.svg": "/portfolio/static/media/html-logo.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.9fccfa92.css.map": "/portfolio/static/css/main.9fccfa92.css.map",
-    "main.92caa5cc.js.map": "/portfolio/static/js/main.92caa5cc.js.map"
+    "main.a420d395.css.map": "/portfolio/static/css/main.a420d395.css.map",
+    "main.94a8c298.js.map": "/portfolio/static/js/main.94a8c298.js.map"
   },
   "entrypoints": [
-    "static/css/main.9fccfa92.css",
-    "static/js/main.92caa5cc.js"
+    "static/css/main.a420d395.css",
+    "static/js/main.94a8c298.js"
   ]
 }
