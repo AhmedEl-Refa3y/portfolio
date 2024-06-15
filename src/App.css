@@ -1,9 +1,24 @@
 .main {
   margin-left: 110px;
+  scrollbar-color: #333232 #888;
+  scrollbar-width: thin;
 }
 
 @media screen and (max-width: 1024px) {
   .main {
     margin-left: 0;
+    scrollbar-color: auto;
+    scrollbar-width: auto;
   }
+}
+
+/* لون الخلفية لشريط التمرير */
+::-webkit-scrollbar {
+  background-color: #333232; /* لون الخلفية */
+}
+
+/* لون شريط التمرير نفسه (الشريط العمودي والأفقي) */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* لون الشريط نفسه */
+  border-radius: 5px; /* شكل الزوايا */
 }
