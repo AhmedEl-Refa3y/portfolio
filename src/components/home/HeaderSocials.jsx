@@ -38,7 +38,7 @@ const HeaderSocials = () => {
       <a
         href="mailto:eng.ahmed.elrefa3y@gmail.com"
         className="home__social-link"
-        target="_blank" 
+        target="_blank"
       >
         <i className="fa-solid fa-envelope"></i>
       </a>
@@ -50,6 +50,14 @@ const HeaderSocials = () => {
       >
         <i className="fa-brands fa-facebook"></i>
       </a> */}
+
+      <a
+        href="https://wa.me/01122072799"
+        className="home__social-link"
+        target="_blank"
+      >
+        <i className="fa-brands fa-whatsapp"></i>
+      </a>
     </div>
   );
 };
