@@ -1,0 +1,129 @@
+/* Experience Section */
+.experience {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--background-color);
+}
+
+.section__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+}
+
+/* Experience Timeline */
+.experience__timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 2rem;
+}
+
+.experience__timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    hsl(353, 100%, 65%),
+    hsl(210, 100%, 65%)
+  );
+}
+
+.experience__item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 2rem;
+}
+
+.experience__item::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(135deg, hsl(353, 100%, 65%), hsl(210, 100%, 65%));
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.experience__year {
+  font-size: 0.9rem;
+  color: hsl(353, 100%, 65%);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.experience__content {
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.experience__role {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.experience__company {
+  font-size: 1rem;
+  color: var(--text-color-light);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.experience__description {
+  font-size: 0.95rem;
+  color: var(--text-color-light);
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .experience__timeline {
+    padding-left: 1.5rem;
+  }
+
+  .experience__item {
+    padding-left: 1.5rem;
+  }
+
+  .experience__content {
+    padding: 1rem;
+  }
+
+  .experience__role {
+    font-size: 1.3rem;
+  }
+
+  .experience__description {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .experience__timeline {
+    padding-left: 1rem;
+  }
+
+  .experience__item {
+    padding-left: 1rem;
+  }
+
+  .experience__role {
+    font-size: 1.2rem;
+  }
+
+  .experience__description {
+    font-size: 0.85rem;
+  }
+}

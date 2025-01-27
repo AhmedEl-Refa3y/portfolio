@@ -1,0 +1,244 @@
+/* About Section */
+.about {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--background-color);
+}
+
+.section__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about__img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  justify-self: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about__data {
+  padding: 2rem;
+  background-color: var(--container-color);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.about__data::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid var(--container-color);
+  position: absolute;
+  left: -0.93rem;
+  top: 50%;
+}
+
+.about__description {
+  font-size: 1rem;
+  color: var(--text-color-light);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--first-color);
+  color: #fff;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--first-color-alt);
+  transform: scale(1.05);
+}
+
+.btn i {
+  margin-right: 0.5rem;
+}
+
+/* Skills Section */
+.about__skills {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.skills__data {
+  margin-bottom: 1rem;
+}
+
+.skills__titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skills__name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.skills__number {
+  font-size: 0.9rem;
+  color: var(--text-color-light);
+}
+
+.skills__bar {
+  height: 7px;
+  border-radius: 0.25rem;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+
+.skills__percentage {
+  height: 100%;
+  border-radius: 0.25rem;
+  background-color: var(--first-color);
+}
+
+.development {
+  width: 80%;
+  background-color: rgb(255, 209, 92);
+}
+
+.ui__design {
+  width: 80%;
+  background-color: rgb(255, 76, 96);
+}
+
+.photography {
+  width: 60%;
+  background-color: rgb(108, 108, 299);
+}
+
+/* About Boxes */
+.about__boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.about__box {
+  padding: 1.5rem;
+  background-color: var(--container-color);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.about__box:hover {
+  transform: translateY(-5px);
+}
+
+.about__icon {
+  font-size: 2rem;
+  color: var(--first-color);
+  margin-bottom: 1rem;
+}
+
+.about__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.about__subtitle {
+  font-size: 0.9rem;
+  color: var(--text-color-light);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about__data::before {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--container-color);
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+  }
+
+  .about__img {
+    max-width: 150px;
+  }
+
+  .about__boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__container {
+    padding: 0 10px;
+  }
+
+  .about__boxes {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section__title {
+    font-size: 2rem;
+  }
+
+  .about__data {
+    padding: 1.5rem;
+  }
+
+  .about__description {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .about__box {
+    padding: 1rem;
+  }
+
+  .about__title {
+    font-size: 1.2rem;
+  }
+
+  .about__subtitle {
+    font-size: 0.8rem;
+  }
+}

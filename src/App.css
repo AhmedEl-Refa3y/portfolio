@@ -1,0 +1,51 @@
+.main {
+  margin-left: 110px;
+  scrollbar-color: #333232 #888;
+  scrollbar-width: thin;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    margin-left: 0;
+    scrollbar-color: auto;
+    scrollbar-width: auto;
+  }
+}
+
+/* لون الخلفية لشريط التمرير */
+::-webkit-scrollbar {
+  background-color: #333232; /* لون الخلفية */
+}
+
+/* لون شريط التمرير نفسه (الشريط العمودي والأفقي) */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* لون الشريط نفسه */
+  border-radius: 5px; /* شكل الزوايا */
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--first-color);
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 99;
+}
+
+.back-to-top:hover {
+  transform: scale(1.1);
+}
+
+.back-to-top:active {
+  transform: scale(0.9);
+}

@@ -1,0 +1,200 @@
+.home {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  max-width: 540px;
+  text-align: center;
+  z-index: 1;
+}
+
+.home__img {
+  margin-bottom: 1.5rem;
+}
+
+.home__name {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: 0.5rem;
+}
+
+.home__socials {
+  display: flex;
+  column-gap: 1.75rem;
+  margin: 1.5rem 0;
+  justify-content: center;
+}
+
+.home__social-link {
+  color: var(--text-color);
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.home__social-link:hover {
+  color: hsl(43, 100%, 68%);
+}
+
+.scroll__down {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+  width: 100%;
+}
+
+.go-down {
+  color: var(--first-color);
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: var(--main-transition);
+}
+.go-down:hover {
+  color: var(--first-color);
+}
+.go-down i {
+  animation: bouncing 1.5s infinite;
+}
+@keyframes up-and-down {
+  0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: -50px;
+  }
+}
+@keyframes bouncing {
+  0%,
+  10%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40%,
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* .home__scroll-name {
+  font-size: var(--small-font-size);
+}
+
+.mouse {
+  border: 2px solid #454360;
+  display: block;
+  height: 1.6rem;
+  width: 1.25rem;
+  margin: auto;
+  margin-top: 0.75rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+@keyframes ani-mouse {
+  0% {
+    top: 29%;
+  }
+  15% {
+    top: 50%;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 29%;
+  }
+}
+
+.wheel {
+  background-color: var(--title-color);
+  border-radius: 100%;
+  width: 0.25rem;
+  height: 0.25rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateY(-50%);
+  animation: ani-mouse 2s linear infinite;
+} */
+
+.shapes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.shape {
+  position: absolute;
+}
+
+.s1 {
+  left: 2%;
+  top: 10%;
+}
+
+.s2 {
+  left: 18%;
+  top: 30%;
+}
+
+.s3 {
+  left: 5%;
+  bottom: 30%;
+}
+
+.s4 {
+  left: 2%;
+  bottom: 10%;
+}
+
+.s5 {
+  left: 2%;
+  top: 10%;
+}
+
+.s6 {
+  left: 36%;
+  bottom: 10%;
+}
+
+.s7 {
+  right: 25%;
+  top: 20%;
+}
+
+.s8 {
+  right: 24%;
+  bottom: 20%;
+}
+
+.s9 {
+  right: 2%;
+  top: 10%;
+}
+
+.s10 {
+  right: 11%;
+  top: 45%;
+}
+
+.s11 {
+  right: 2%;
+  bottom: 10%;
+}
+
+@media screen and (max-width: 1024px) {
+  .home__social-link {
+    font-size: 1.125rem;
+  }
+}

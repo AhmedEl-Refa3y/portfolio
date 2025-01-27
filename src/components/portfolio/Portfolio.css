@@ -1,0 +1,150 @@
+.portfolio-container {
+  /* display: flex; */
+  color: #ffffff;
+  padding: 20px;
+}
+
+.projects-container{
+  display: flex;
+}
+
+.filters {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.filter-button {
+  background: transparent;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s;
+}
+
+.filter-button.active {
+  background-color: #ff4d61;
+  color: #fff;
+}
+
+.filter-button:hover {
+  background-color: #ff4d61;
+}
+
+@media (max-width: 768px) {
+  .projects-container{
+    flex-direction: column;
+  }
+  
+  .filters {
+    flex-direction: row;
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .filter-button {
+    width: 48%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+  }
+
+  .filter-button.active {
+    background-color: #333;
+  }
+
+  .filter-button:hover {
+    background-color: #444;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-button {
+    padding: 14px 0;
+    font-size: 16px;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 projects in a row */
+  gap: 20px;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+@media (max-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr); /* 2 projects in a row for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr; /* 1 project in a row for mobile */
+    margin-left: 0;
+  }
+}
+
+.project-card {
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  /* padding: 15px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  height: 150px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+.card-links {
+  display: flex;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.card-links a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.card-links a:hover {
+  color: #ff4d61;
+}
+
+@media (max-width: 768px) {
+  .portfolio-container {
+    flex-direction: column;
+  }
+}

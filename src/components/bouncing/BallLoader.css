@@ -1,0 +1,42 @@
+.ball-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.ball {
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, hsl(353, 100%, 65%), hsl(43, 100%, 68%));
+  animation: bounce 0.7s infinite alternate;
+}
+
+@media screen and (max-width: 1024px) {
+  .ball {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.top,
+.middle,
+.bottom,
+.extra {
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.2);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
