@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.22e39018.css",
-    "main.js": "/portfolio/static/js/main.8704cbe9.js",
+    "main.js": "/portfolio/static/js/main.f6305285.js",
     "static/media/native-e-commerce.png": "/portfolio/static/media/native-e-commerce.014e9714b78fab66422b.png",
     "static/media/comforty.png": "/portfolio/static/media/comforty.5603b7ec2b270502ef0e.png",
     "static/media/hooBank.png": "/portfolio/static/media/hooBank.706cece6f163a0d1c208.png",
@@ -24,10 +24,10 @@
     "static/media/icons-typescript.svg": "/portfolio/static/media/icons-typescript.f20748caf2dac55710ddeed71de0bac4.svg",
     "static/media/html-logo.svg": "/portfolio/static/media/html-logo.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "main.22e39018.css.map": "/portfolio/static/css/main.22e39018.css.map",
-    "main.8704cbe9.js.map": "/portfolio/static/js/main.8704cbe9.js.map"
+    "main.f6305285.js.map": "/portfolio/static/js/main.f6305285.js.map"
   },
   "entrypoints": [
     "static/css/main.22e39018.css",
-    "static/js/main.8704cbe9.js"
+    "static/js/main.f6305285.js"
   ]
 }
