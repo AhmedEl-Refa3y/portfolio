@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.22e39018.css",
+    "main.js": "/portfolio/static/js/main.8704cbe9.js",
+    "static/media/native-e-commerce.png": "/portfolio/static/media/native-e-commerce.014e9714b78fab66422b.png",
+    "static/media/comforty.png": "/portfolio/static/media/comforty.5603b7ec2b270502ef0e.png",
+    "static/media/hooBank.png": "/portfolio/static/media/hooBank.706cece6f163a0d1c208.png",
+    "static/media/wep_store.png": "/portfolio/static/media/wep_store.74a7572e84558d3c72e4.png",
+    "static/media/daily-task.png": "/portfolio/static/media/daily-task.acfdf659aa33e8e2d17e.png",
+    "static/media/admin-dashboard.png": "/portfolio/static/media/admin-dashboard.9c0ecaca32089c281f66.png",
+    "static/media/weather-app.png": "/portfolio/static/media/weather-app.d4bc3abe94694035b716.png",
+    "static/media/me.jpg": "/portfolio/static/media/me.d0a2989b78f2c524d9e3.jpg",
+    "static/media/sass-icon.svg": "/portfolio/static/media/sass-icon.8bc32fe1b3fc5c549d6edf218729e20a.svg",
+    "static/media/react-icon.svg": "/portfolio/static/media/react-icon.f1484e295933af0e748d6a01b05a8361.svg",
+    "static/media/css-logo.svg": "/portfolio/static/media/css-logo.19cd0dec3a45c84933cf89413da68d3e.svg",
+    "static/media/c++-icon.svg": "/portfolio/static/media/c++-icon.5eb1abc418ed3dd0e1d217f2e5fb2d1e.svg",
+    "static/media/redux-icon.svg": "/portfolio/static/media/redux-icon.0a4a6ca2be44339bedb69de15f66d243.svg",
+    "static/media/icons-github.svg": "/portfolio/static/media/icons-github.dc49a960a2d3c5a49c806f6188a7733b.svg",
+    "static/media/icon-python.svg": "/portfolio/static/media/icon-python.026a62687ef705a39cfc755d7457859c.svg",
+    "static/media/bootstrap-logo.svg": "/portfolio/static/media/bootstrap-logo.c2b6db5b07dafc23f205980c22be4ab0.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/javascript-logo.svg": "/portfolio/static/media/javascript-logo.34cd9860149518f3e4ecc21a4b50efae.svg",
+    "static/media/icons-git.svg": "/portfolio/static/media/icons-git.43d387b77657117c0e407816cbf72476.svg",
+    "static/media/icons-typescript.svg": "/portfolio/static/media/icons-typescript.f20748caf2dac55710ddeed71de0bac4.svg",
+    "static/media/html-logo.svg": "/portfolio/static/media/html-logo.c1bb84e022ca9d76984d4b943bd678fd.svg",
+    "main.22e39018.css.map": "/portfolio/static/css/main.22e39018.css.map",
+    "main.8704cbe9.js.map": "/portfolio/static/js/main.8704cbe9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22e39018.css",
+    "static/js/main.8704cbe9.js"
+  ]
+}
