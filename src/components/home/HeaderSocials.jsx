@@ -28,7 +28,7 @@ const HeaderSocials = () => {
       </a>
 
       <a
-        href="https://linkedin.com/ahmed-elrefa3y-156688261"
+        href="https://www.linkedin.com/in/ahmed-el-refay-156688261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         className="home__social-link"
         target="_blank"
       >
